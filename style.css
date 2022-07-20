@@ -3,11 +3,11 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 .first {
-    display: flex;
     width: 1321px;
     height: 646px;
     left: 140px;
@@ -22,17 +22,16 @@ body {
     height: 424px;
     left: 246px;
     top: 161px;
-    margin-left: 106px;
-    margin-right: 24px;
 }
 
 .text .heading {
+
+
     width: 531px;
     height: 240px;
     left: 246px;
     top: 161px;
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
@@ -49,6 +48,8 @@ body {
     height: 78px;
     left: 246px;
     top: 421px;
+
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -61,6 +62,9 @@ body {
 }
 
 .text button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 16px 25px;
     gap: 10px;
 
@@ -68,26 +72,30 @@ body {
     width: 187px;
     height: 56px;
     left: 246px;
-    margin-top: 70px;
+    top: 529px;
+    margin-top: 50px;
 
     background: #DD0000;
     border-radius: 5px;
 }
 
-/* .text .button fa-angles-right {
-    padding-left: 50px;
- }  */
-
 .image {
+    position: absolute;
     width: 581px;
     height: 613px;
     left: 801px;
-    margin-top: 83px;
-    margin-right: 79px;
+    top: 83px;
+}
+
+.text,
+.image {
+    padding: 20px;
+    margin-left: 106px;
 }
 
 /* second sec */
 .left {
+
     width: 312px;
     height: 312px;
     left: 140px;
@@ -95,27 +103,35 @@ body {
 
     background: #161616;
     border-radius: 10px;
-    margin-right: 40px;
-    justify-content: center;
-}
-
-.left .container {
-
-    width: 252px;
-    height: 252px;
-    left: 170px;
-    top: 856px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    align-items: center;
 
 }
 
-.left .box1 {
+.left .box {
     width: 252px;
     height: 64px;
-
-    border: 5px solid #DD0000;
     background-color: #FFFFFF;
     text-decoration: none;
     border-radius: 5px;
+    justify-content: center;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* text deco */
+.left .box a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
 }
 
 
@@ -211,6 +227,7 @@ body {
 .footer #goal {
     padding-top: 130px;
     padding-bottom: 20px;
+    font-size: 30px;
 }
 
 hr {
@@ -228,3 +245,59 @@ hr {
 .footer .inline {
     padding-top: 15px;
 }
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .footer-icon {
+    padding: 30px;
+}
+
+.footer .fa-facebook,
+.fa-youtube,
+.fa-instagram {
+    padding-right: 20px;
+    size: 20px;
+    color: white;
+}
+
+/* For another  website */
+.blog-2 {
+    border: 1px solid gray;
+    border-radius: 12px;
+    background-color: lightgrey;
+    width: 312px;
+    height: 242px;
+    left: 476px;
+    top: 826px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+
+}
+
+.blog-2 .flag {
+    display: flex;
+    justify-content: space-around;
+    width: 252px;
+    height: 56.18px;
+    left: 506px;
+    top: 879px;
+    margin: 30px;
+    margin-bottom: 0px;
+
+}
+
+.blog-2 .blog-2-text {
+    text-align: center;
+}
+
+.blog-2 .blog-2-text h5 {
+    font-weight: 100;
+
+}
+
+/* RESPONSIVE */
+/* mobile */
+@media only screen and (max-width:668px) {}
