@@ -1,0 +1,230 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.first {
+    display: flex;
+    width: 1321px;
+    height: 646px;
+    left: 140px;
+    top: 50px;
+
+    background: #161616;
+    border-radius: 30px;
+}
+
+.text {
+    width: 531px;
+    height: 424px;
+    left: 246px;
+    top: 161px;
+    margin-left: 106px;
+    margin-right: 24px;
+}
+
+.text .heading {
+    width: 531px;
+    height: 240px;
+    left: 246px;
+    top: 161px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    /* or 114% */
+
+
+    color: #FFFFFF;
+}
+
+.text .paragraph {
+
+    width: 506px;
+    height: 78px;
+    left: 246px;
+    top: 421px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+
+    color: #FFFFFF;
+
+}
+
+.text button {
+    padding: 16px 25px;
+    gap: 10px;
+
+
+    width: 187px;
+    height: 56px;
+    left: 246px;
+    margin-top: 70px;
+
+    background: #DD0000;
+    border-radius: 5px;
+}
+
+/* .text .button fa-angles-right {
+    padding-left: 50px;
+ }  */
+
+.image {
+    width: 581px;
+    height: 613px;
+    left: 801px;
+    margin-top: 83px;
+    margin-right: 79px;
+}
+
+/* second sec */
+.left {
+    width: 312px;
+    height: 312px;
+    left: 140px;
+    top: 826px;
+
+    background: #161616;
+    border-radius: 10px;
+    margin-right: 40px;
+    justify-content: center;
+}
+
+.left .container {
+
+    width: 252px;
+    height: 252px;
+    left: 170px;
+    top: 856px;
+
+}
+
+.left .box1 {
+    width: 252px;
+    height: 64px;
+
+    border: 5px solid #DD0000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+.second {
+    display: flex;
+    padding-top: 70px;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.blog {
+    border: 1px solid gray;
+    border-radius: 12px;
+    background-color: lightgrey;
+    width: 312px;
+    height: 362px;
+    left: 476px;
+    top: 826px;
+}
+
+.right .blog img {
+    width: 312px;
+    height: 175px;
+    left: 476px;
+    top: 826px;
+
+}
+
+
+.right .blog .text1 {
+    width: 67px;
+    height: 24px;
+    left: 513px;
+    top: 1025px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #161616;
+
+}
+
+.right .blog .text2 {
+    width: 272px;
+    height: 54px;
+    left: 496px;
+    top: 1068px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+
+}
+
+.right .blog .icon {
+    display: flex;
+}
+
+.blog .icon .fa-clock {
+    padding-left: 20px;
+}
+
+.blog .icon p {
+    padding-right: 20px;
+    padding-left: 5pxs;
+}
+
+.blog .para1 {
+    padding-left: 20px;
+}
+
+/* Third */
+
+.footer {
+    width: 1600px;
+    height: 444px;
+    left: 0px;
+    top: 2090px;
+    margin-top: 50px;
+    background-color: #161616;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer #goal {
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 50%;
+    color: gray;
+}
+
+.footer .footer-text {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    display: inline;
+}
+
+.footer .inline {
+    padding-top: 15px;
+}
