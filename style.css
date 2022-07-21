@@ -390,11 +390,6 @@ RESPONSIVE
         padding-bottom: 0%;
     }
 
-    .image:hover {
-        transition: 1s;
-        transform: scale(1.25);
-    }
-
     .second {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -443,7 +438,7 @@ RESPONSIVE
         left: 0px;
         top: 3175px;
 
-        background: #161616;
+        background: #416a59;
     }
 
     .footer #goal {
@@ -484,7 +479,7 @@ RESPONSIVE
     .First {
         width: 992;
         height: 470px;
-        background: #161616;
+        background: #416a59;
         border-radius: 30px;
     }
 
