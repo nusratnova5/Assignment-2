@@ -4,16 +4,25 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    background-color: #a9c25d;
+
+}
+
+/*------------
+FIRST SECTION
+-------------*/
+.first-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .First {
     width: 1321px;
     height: 646px;
-    left: 140px;
-    top: 50px;
-
-    background: #161616;
+    background: #416a59;
     border-radius: 30px;
 }
 
@@ -36,10 +45,8 @@ body {
     font-weight: 700;
     font-size: 70px;
     line-height: 80px;
-    /* or 114% */
-
-
     color: #FFFFFF;
+    font-weight: 700;
 }
 
 .text .paragraph {
@@ -54,10 +61,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    /* or 162% */
-
-
     color: #FFFFFF;
+    font-weight: 400;
 
 }
 
@@ -67,15 +72,12 @@ body {
     align-items: flex-start;
     padding: 16px 25px;
     gap: 10px;
-
-
     width: 187px;
     height: 56px;
     left: 246px;
     top: 529px;
     margin-top: 50px;
-
-    background: #DD0000;
+    background: #73a24e;
     border-radius: 5px;
     text-align: center;
 }
@@ -88,21 +90,32 @@ body {
     top: 83px;
 }
 
+/* Animation */
+.image:hover {
+    transition: 1s;
+    transform: scale(1.25);
+}
+
 .text,
 .image {
     padding: 20px;
     margin-left: 106px;
 }
 
-/* second sec */
+/*-------------
+SECOEND SECTION
+--------------- */
+.second {
+    display: flex;
+    /* align-items: center; */
+    padding-top: 70px;
+}
+
 .left {
 
     width: 312px;
     height: 312px;
-    left: 140px;
-    top: 826px;
-
-    background: #161616;
+    background: #39395f;
     border-radius: 10px;
     margin-right: 50px;
     display: grid;
@@ -125,7 +138,7 @@ body {
 }
 
 .left .selected {
-    background-color: #DD0000;
+    background-color: #73a24e;
 }
 
 /* text deco */
@@ -137,17 +150,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-}
-
-.left .box h6 {
-    font-weight: 1000px;
-    font-size: 15px;
-}
-
-
-.second {
-    display: flex;
-    padding-top: 70px;
+    font-weight: 500;
 }
 
 .right {
@@ -160,7 +163,7 @@ body {
 .blog {
     border: 1px solid gray;
     border-radius: 12px;
-    background-color: lightgrey;
+    background-color: #f5eec2;
     width: 312px;
     height: 362px;
     left: 476px;
@@ -172,18 +175,18 @@ body {
     height: 175px;
     left: 476px;
     top: 826px;
+    padding-bottom: 10px;
 
 }
 
-
-.right .blog .text1 {
+.second-container .right .para1 button {
     width: 67px;
     height: 24px;
     left: 513px;
     top: 1025px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+
     border: 1px solid gray;
     border-radius: 5px;
     padding: 5px 10px;
@@ -220,7 +223,9 @@ body {
     padding-left: 20px;
 }
 
-/* Third */
+/* ----------
+THIRD SECTION
+------------- */
 
 .footer {
     width: 1600px;
@@ -228,7 +233,7 @@ body {
     left: 0px;
     top: 2090px;
     margin-top: 50px;
-    background-color: #161616;
+    background-color: #416a59;
     text-align: center;
     color: #FFFFFF;
 }
@@ -237,6 +242,7 @@ body {
     padding-top: 130px;
     padding-bottom: 20px;
     font-size: 30px;
+    font-weight: 600;
 }
 
 hr {
@@ -249,6 +255,7 @@ hr {
     justify-content: center;
     padding-right: 20px;
     display: inline;
+    font-weight: 500;
 }
 
 .footer .inline {
@@ -271,7 +278,7 @@ hr {
     color: white;
 }
 
-/* For another  website */
+/* For linked  website */
 .blog-2 {
     border: 1px solid gray;
     border-radius: 12px;
@@ -307,8 +314,10 @@ hr {
 
 }
 
-/* RESPONSIVE */
-/* mobile */
+/* ---------
+RESPONSIVE
+----------- */
+/* Mobile */
 @media only screen and (max-width:688px) {
     .First {
         width: 100%;
@@ -323,11 +332,7 @@ hr {
         left: 59px;
         top: 22px;
         margin-left: 50px;
-
-
         overflow: hidden;
-
-
     }
 
     .text .heading {
@@ -335,14 +340,10 @@ hr {
         height: 66px;
         left: 74px;
         top: 72px;
-
-
-
         font-weight: 700;
         font-size: 22px;
         line-height: 33px;
         text-align: center;
-
         color: #FFFFFF;
 
     }
@@ -352,21 +353,14 @@ hr {
         height: 48px;
         left: 59px;
         top: 146px;
-
-
-
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        /* or 171% */
-
         text-align: center;
-
         color: rgba(255, 255, 255, 0.8);
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-
     }
 
     .text button {
@@ -375,13 +369,11 @@ hr {
         align-items: flex-start;
         padding: 8px 12px;
         gap: 10px;
-
         position: absolute;
         width: 161px;
         height: 40px;
         left: 108px;
         top: 210px;
-
         background: #DD0000;
         border-radius: 5px;
         overflow: hidden;
@@ -391,12 +383,16 @@ hr {
     .image {
         width: 233px;
         height: 245px;
-        left: 84px;
+        left: 35px;
         top: 271px;
         margin-left: 0px;
         margin-bottom: 0px;
         padding-bottom: 0%;
+    }
 
+    .image:hover {
+        transition: 1s;
+        transform: scale(1.25);
     }
 
     .second {
@@ -455,16 +451,12 @@ hr {
         height: 33px;
         left: 162px;
         top: 3199px;
-
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 22px;
         line-height: 33px;
-        /* identical to box height */
-
         text-align: center;
-
         color: #FFFFFF;
         padding-top: 10px;
         padding-bottom: 5px;
@@ -475,7 +467,6 @@ hr {
     .inline {
         display: flex;
         flex-direction: column;
-
     }
 
     .footer .footer-text {
@@ -486,25 +477,31 @@ hr {
 
 /* Tablet */
 @media only screen and (min-width:689px) and (max-width:992px) {
-    .First {
-        width: 992;
-        height: 450px;
-
-
-        background: #161616;
-        border-radius: 30px;
-
+    body {
+        width: 100%;
     }
 
-    .text {
+    .First {
+        width: 992;
+        height: 470px;
+        background: #161616;
+        border-radius: 30px;
+    }
+
+    .first-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .first-container .text {
         width: 316px;
-        height: 276px;
+        height: 550px;
         left: 126px;
         top: 111px;
         margin-left: 0px;
     }
 
-    .text .heading {
+    .first-container .text .heading {
         width: 289px;
         height: 150px;
         left: 126px;
@@ -512,13 +509,10 @@ hr {
         font-weight: 700;
         font-size: 40px;
         line-height: 50px;
-        /* or 125% */
-
-
         color: #FFFFFF;
     }
 
-    .text .paragraph {
+    .first-container .text .paragraph {
         width: 316px;
         height: 48px;
         left: 126px;
@@ -529,48 +523,55 @@ hr {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        /* or 171% */
-
-
         color: #FFFFFF;
     }
 
-    .text button {
+    .first-container .text button {
         padding: 12px;
-        gap: 10px;
-
-
+        margin-top: 115px;
         width: 161px;
         height: 48px;
-        left: 126px;
-        top: 339px;
-
         background: #DD0000;
         border-radius: 5px;
     }
 
     .image {
         width: 323px;
-        height: 340px;
-        left: 350px;
-        top: 108px;
+        height: 330px;
+        left: 225px;
+        top: 88px;
     }
 
-    .second {}
+    .second {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-    .left {}
+    .second-container {
+        width: 100%;
+    }
 
-    .left .box {}
+    .left {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+        background-color: #FFFFFF;
+        margin: 0;
 
+    }
 
+    .left .box {
+        border: 1px solid black;
+    }
 
-    .right {}
+    .right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    .footer {}
-
-    .footer #goal {}
-
-    .inline {}
-
-    .footer .footer-text {}
+    .footer {
+        width: 100%;
+    }
 }
